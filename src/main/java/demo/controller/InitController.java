@@ -10,7 +10,7 @@ public class InitController {
 
     @GetMapping("/")
     public String init(Model model,
-            @RequestParam(defaultValue = "Hellow World") String message) {
+            @RequestParam(defaultValue = "Hellow World!") String message) {
         model.addAttribute("message", message);
         return "index";
     }
